@@ -1,111 +1,144 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shourya Gupta - Resume</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fff;
       margin: 0;
       padding: 0;
-      color: #333;
+      background: #f2f2f2;
     }
     header {
-      display: flex;
-      align-items: center;
-      padding: 30px;
-      background-color: #f7f7f7;
-    }
-    header img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      margin-right: 30px;
-    }
-    .contact-btns a {
-      margin-right: 10px;
-      padding: 10px 15px;
-      border: 1px solid #007bff;
-      color: #007bff;
-      text-decoration: none;
-      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
     }
     nav {
-      background-color: #007bff;
-      padding: 10px;
+      display: flex;
+      justify-content: center;
+      background: #007bff;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
+      padding: 14px 20px;
       text-decoration: none;
-      margin-right: 20px;
-      font-weight: bold;
+    }
+    nav a:hover {
+      background: #0056b3;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .profile-pic {
+      width: 120px;
+      border-radius: 50%;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .tag {
+      background: #e0e0e0;
+      padding: 6px 12px;
+      border-radius: 20px;
     }
     section {
-      padding: 20px 30px;
+      margin-top: 30px;
     }
     h2 {
       color: #007bff;
-    }
-    .tags span {
+      border-bottom: 2px solid #007bff;
       display: inline-block;
-      background-color: #e0e0e0;
-      padding: 5px 10px;
-      border-radius: 15px;
-      margin: 5px 5px 0 0;
+      margin-bottom: 10px;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f7f7f7;
+    .button {
+      border: 1px solid #007bff;
+      color: #007bff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 8px 6px 0 0;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #007bff;
+      color: white;
     }
   </style>
 </head>
-<body>  <nav>
-    <a href="#about">About Me</a>
-    <a href="#objective">Career Objective</a>
-    <a href="#skills">Skills</a>
-    <a href="#interests">Interests</a>
-    <a href="#education">Education</a>
-  </nav>  <header id="about">
-    <img src="https://i.ibb.co/k3yqJLR/Shourya-Profile.jpg" alt="Shourya Gupta">
-    <div>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#objective">Career Objective</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <div class="container" id="about">
+    <div style="text-align: center;">
+      <img class="profile-pic" src="https://i.ibb.co/cX7QCfkV/IMG-20250420-WA0059.jpg" alt="Shourya Gupta" />
       <h1>Shourya Gupta</h1>
       <p>BBA in Digital Business and Entrepreneurship<br>
-        Indian Institute of Management Bangalore</p>
+      Indian Institute of Management Bangalore</p>
       <p>shourya.gupta24@iimb.ac.in | 9044427686</p>
-      <p><a href="https://www.linkedin.com/in/shourya-gupta-">LinkedIn Profile</a></p>
-      <div class="contact-btns">
-        <a href="https://i.ibb.co/0sGktNq/Shourya-Gupta-CV.jpg" download="Shourya_Gupta_CV.jpg">Download CV</a>
-        <a href="mailto:shourya.gupta24@iimb.ac.in">Contact</a>
+      <p><a class="button" href="https://www.linkedin.com/in/shourya-gupta-" target="_blank">LinkedIn Profile</a></p>
+      <a class="button" href="https://drive.google.com/uc?export=download&id=1BHzHqRSqWxEyDt6fkW9jCLRhNbgk6E5x">Download CV</a>
+      <a class="button" href="mailto:shourya.gupta24@iimb.ac.in">Contact</a>
+    </div>
+
+    <section id="objective">
+      <h2>Career Objective</h2>
+      <p>
+        Aspiring digital business leader with a passion to be an entrepreneur, innovation, and strategic problem-solving.
+        I aim to create impactful solutions. I am driven by curiosity, a growth mindset, and a deep interest in building scalable ventures that are sustainable and make meaningful difference.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span class="tag">Strategic Thinking</span>
+        <span class="tag">Creativity & Ideation</span>
+        <span class="tag">Problem-Solving</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Leadership</span>
+        <span class="tag">Adaptability</span>
       </div>
-    </div>
-  </header>  <section id="objective">
-    <h2>Career Objective</h2>
-    <p>Aspiring digital business leader with a passion to be an entrepreneur, innovation, and strategic problem-solving. I aim to create impactful solutions. I am driven by curiosity, a growth mindset, and a deep interest in building scalable ventures that are sustainable and make meaningful difference.</p>
-  </section>  <section id="skills">
-    <h2>Skills</h2>
-    <div class="tags">
-      <span>Strategic Thinking</span>
-      <span>Creativity & Ideation</span>
-      <span>Problem-Solving</span>
-      <span>Communication</span>
-      <span>Leadership</span>
-      <span>Adaptability</span>
-    </div>
-  </section>  <section id="interests">
-    <h2>Interests</h2>
-    <div class="tags">
-      <span>Journaling</span>
-      <span>Meditation</span>
-      <span>Exercise</span>
-      <span>Story Writing</span>
-    </div>
-  </section>  <section id="education">
-    <h2>Education</h2>
-    <p><strong>BBA in Digital Business and Entrepreneurship</strong><br>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <div class="tags">
+        <span class="tag">Journaling</span>
+        <span class="tag">Meditation</span>
+        <span class="tag">Exercise</span>
+        <span class="tag">Story Writing</span>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>BBA in Digital Business and Entrepreneurship</strong><br>
       Indian Institute of Management Bangalore (2024 – Present)</p>
-  </section>  <footer>
-    &copy; 2025 Shourya Gupta. All rights reserved.
-  </footer></body>
+    </section>
+
+    <footer style="text-align: center; margin-top: 40px;">
+      <p>© 2025 Shourya Gupta. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
 </html>
